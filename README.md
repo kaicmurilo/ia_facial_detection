@@ -14,9 +14,10 @@ matplotlib
 scikit-learn
 You can install the required Python packages using the following command:
 
-bash
+```bash
 Copy code
 pip install tensorflow pandas matplotlib scikit-learn
+```
 Usage
 Download the FER2013 dataset from Kaggle.
 Place the fer2013.csv file in the train/ directory.
