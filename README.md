@@ -1,7 +1,7 @@
 Link csv.
 https://drive.google.com/file/d/1-3Buxxb25tqZb1b9qyHXXNi2brqr6R58/view?usp=sharing
 
-README.md for train.py
+# README.md for train.py
 This script (train.py) is designed to train a Convolutional Neural Network (CNN) for emotion recognition using the FER2013 dataset. The FER2013 dataset contains facial expressions labeled with different emotions, including happiness, sadness, fear, disgust, surprise, and neutral.
 
 Prerequisites
@@ -15,7 +15,6 @@ scikit-learn
 You can install the required Python packages using the following command:
 
 ```bash
-Copy code
 pip install tensorflow pandas matplotlib scikit-learn
 ```
 Usage
@@ -24,9 +23,10 @@ Place the fer2013.csv file in the train/ directory.
 Script Execution
 Run the train.py script using the following command:
 
-bash
-Copy code
+```bash
 python train.py
+```
+
 Script Overview
 Data Loading and Preprocessing:
 
@@ -65,7 +65,7 @@ Feel free to customize the script according to your requirements and experiment 
 
 
 
-README.md for predict_emotion.py
+# README.md for predict_emotion.py
 This script (predict_emotion.py) utilizes a pre-trained Convolutional Neural Network (CNN) model to predict emotions in facial images. The model is assumed to be saved in the checkpoint/best_model.h5 file, and it should have been trained using the train.py script.
 
 Prerequisites
@@ -78,18 +78,20 @@ matplotlib
 NumPy
 You can install the required Python packages using the following command:
 
-bash
-Copy code
+```bash
 pip install tensorflow opencv-python matplotlib numpy
+```	
+
 Usage
 Ensure that the pre-trained model (best_model.h5) is available in the checkpoint/ directory. You can train the model using the train.py script.
 Place the images you want to predict in the images/ directory.
 Script Execution
 Run the predict_emotion.py script using the following command:
 
-bash
-Copy code
+```bash
 python predict_emotion.py
+```
+
 The script will process each image in the images/ directory, detect faces, and display the predicted emotion along with a bounding box around the detected face.
 
 Script Overview
